@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Stezhok';
+  src: url('../fonts/Шрифт-стежок.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stezhok';
+  src: url('../fonts/Шрифт-стежок.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Architexture';
+  src: url('../fonts/Architexture_финал.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Architexture';
+  src: url('../fonts/Architexture_финал.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

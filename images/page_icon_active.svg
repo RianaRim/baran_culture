@@ -1,0 +1,7 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 0V7H20L13 0Z" fill="#6766FC"/>
+<path d="M7 7V0L0 7H7Z" fill="#6766FC"/>
+<path d="M7 20V14H0L7 20Z" fill="#6766FC"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 20H7V14H0V7H7V0H13V7H20V14H13V20Z" fill="#0302FF"/>
+<path d="M13 14V20L20 14H13Z" fill="#6766FC"/>
+</svg>

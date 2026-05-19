@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fdfdfd;
+  font-family: 'Stezhok', 'Architexture';
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #fdfdfd;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+a:hover {
+  color: #dadada;
+}
+p {
+  font-family: 'Architexture';
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+/* ____________________шапка____________________ */
+.header {
+  width: 100%;
+  height: 2.5vw;
+}
+.blueRec {
+  width: 100%;
+  height: 2.5vw;
+  background-color: #0504ff;
+  display: flex;
+}
+.blueBorder_1 {
+  width: 0.5vw;
+  height: 48vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 2.5vw;
+}
+.blueBorder_2 {
+  width: 0.5vw;
+  height: 48vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 2.5vw;
+  left: 99.5vw;
+}
+.blueBorder_3 {
+  width: 99.5vw;
+  height: 0.5vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 47.5vw;
+  left: 0vw;
+}
+#fullLogo {
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+#name {
+  font-family: 'Architexture';
+  color: #fdfdfd;
+  padding-top: 0.85vw;
+  margin-left: 0.5vw;
+}
+#main,
+#project,
+#about,
+#archive,
+#contacts {
+  padding-top: 0.85vw;
+}
+#main {
+  margin-left: 25vw;
+}
+#project,
+#about,
+#archive,
+#contacts {
+  margin-left: 1vw;
+}
+#time {
+  color: #fdfdfd;
+  padding-top: 0.85vw;
+  margin-left: 29.5vw;
+}
+
+/* ____________________главный экран____________________ */
+.paleolit {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: visible;
+}
+.paleolit_block {
+  position: absolute;
+  animation: block 4s linear infinite alternate;
+}
+
+.mainScreen {
+  width: 100%;
+  height: 48vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.windows {
+  width: 35%;
+  height: 48vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content {
+  width: 65%;
+  height: 48vw;
+}
+
+.windowNav_1 {
+  width: 35%;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+.windowNav_2 {
+  width: 50%;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+.iconWindow_1 {
+  display: flex;
+  flex-direction: column;
+}
+.iconWindow_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.window-icon img {
+  width: 1.8vw;
+  height: 1.8vw;
+  margin-top: 1.3vw;
+  margin-left: 2vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.window-icon .inactive-img {
+  display: block;
+}
+
+.window-icon.active .inactive-img {
+  display: none;
+}
+
+.window-icon.active img:not(.inactive-img) {
+  display: block;
+}
+
+.textWindow_1 {
+  display: flex;
+  flex-direction: column;
+}
+#windowName_1,
+#windowName_2,
+#windowName_3 {
+  font-size: 1.1vw;
+  margin-top: 1.85vw;
+  margin-left: 0.5vw;
+}
+#windowName_3 {
+  margin-top: 2vw;
+}
+.textWindow_2 {
+  display: flex;
+  flex-direction: column;
+}
+#windowName_4,
+#windowName_5,
+#windowName_6 {
+  font-size: 1.1vw;
+  margin-top: 1.85vw;
+  margin-left: 0.5vw;
+}
+#windowName_6 {
+  margin-top: 2vw;
+}
+
+.baran {
+  font-family: 'Stezhok';
+  font-size: 20vw;
+  color: #0504ff;
+  position: absolute;
+  top: 32.6vw;
+  left: 0.7vw;
+  z-index: 2;
+}
+.baran_2 {
+  font-family: 'Stezhok';
+  font-size: 20vw;
+  color: #0504ff;
+  -webkit-text-stroke: 0.4vw #fdfdfd;
+  position: absolute;
+  top: 32.6vw;
+  left: 0.7vw;
+  z-index: 1;
+}

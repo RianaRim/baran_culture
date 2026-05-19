@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БЭРЭН—культура Севера России</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" href="images/logotype.svg" type="images.svg" />
+    <script defer src="javascripts/scripts.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+        }
+      }
+    </script>
+    <script defer src="javascripts/model.js" type="module"></script>
+  </head>
+  <body>
+    <!-- _________________шапка_________________ -->
+    <section class="header">
+      <div id="burger"></div>
+
+      <div class="blueRec">
+        <img
+          id="fullLogo"
+          src="images/logotype_full.svg"
+          alt="логотип агенства"
+        />
+        <p id="name">Антонихина Валерия</p>
+        <a id="main" href="index.html"><p>главная</p></a>
+        <a id="project" href="project.html"><p>проекты</p></a>
+        <a id="about" href="about.html"><p>об авторе</p></a>
+        <a id="archive" href="archive.html"><p>архив</p></a>
+        <a id="contacts" href="contacts.html"><p>контакты</p></a>
+        <p id="time">0:00:00 {время}</p>
+      </div>
+      <div class="blueBorder_1"></div>
+      <div class="blueBorder_2"></div>
+      <div class="blueBorder_3"></div>
+    </section>
+    <!-- _________________главный экран_________________ -->
+    <section class="mainScreen">
+      <div class="paleolit"></div>
+
+      <div class="windows">
+        <div class="windowNav_1">
+          <div class="iconWindow_1">
+            <div class="window-icon active">
+              <img src="images/page_icon_active.svg" alt="иконка" />
+              <img
+                src="images/page_icon_defalt.svg"
+                alt="иконка"
+                class="inactive-img"
+              />
+            </div>
+            <div class="window-icon">
+              <img src="images/page_icon_active.svg" alt="иконка" />
+              <img
+                src="images/page_icon_defalt.svg"
+                alt="иконка"
+                class="inactive-img"
+              />
+            </div>
+            <div class="window-icon active">
+              <img src="images/page_icon_active.svg" alt="иконка" />
+              <img
+                src="images/page_icon_defalt.svg"
+                alt="иконка"
+                class="inactive-img"
+              />
+            </div>
+          </div>
+          <div class="textWindow_1">
+            <p id="windowName_1">информация</p>
+            <p id="windowName_2">проекты</p>
+            <p id="windowName_3">об авторе</p>
+          </div>
+        </div>
+        <div class="windowNav_2">
+          <div class="iconWindow_2">
+            <div class="window-icon active">
+              <img src="images/page_icon_active.svg" alt="иконка" />
+              <img
+                src="images/page_icon_defalt.svg"
+                alt="иконка"
+                class="inactive-img"
+              />
+            </div>
+            <div class="window-icon">
+              <img src="images/page_icon_active.svg" alt="иконка" />
+              <img
+                src="images/page_icon_defalt.svg"
+                alt="иконка"
+                class="inactive-img"
+              />
+            </div>
+          </div>
+          <div class="textWindow_2">
+            <p id="windowName_4">контакты</p>
+            <p id="windowName_5">архив</p>
+            <p id="windowName_6">эксперимент</p>
+          </div>
+        </div>
+      </div>
+      <div class="content"></div>
+      <h1 class="baran">бэрэн</h1>
+      <h1 class="baran_2">бэрэн</h1>
+    </section>
+  </body>
+</html>

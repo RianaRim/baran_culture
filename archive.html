@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БЭРЭН—архив</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" href="images/logotype.svg" type="images.svg" />
+    <script defer src="javascripts/scripts.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+        }
+      }
+    </script>
+    <script defer src="javascripts/model.js" type="module"></script>
+  </head>
+  <body>
+    <!-- шапка -->
+    <section class="header">
+      <div id="burger"></div>
+
+      <div class="blueRec">
+        <img
+          id="fullLogo"
+          src="images/logotype_full.svg"
+          alt="логотип агенства"
+        />
+        <p id="name">Антонихина Валерия</p>
+        <a id="main" href="index.html"><p>главная</p></a>
+        <a id="project" href="project.html"><p>проекты</p></a>
+        <a id="about" href="about.html"><p>об авторе</p></a>
+        <a id="archive" href="archive.html"><p>архив</p></a>
+        <a id="contacts" href="contacts.html"><p>контакты</p></a>
+        <p id="time">0:00:00 {время}</p>
+      </div>
+    </section>
+  </body>
+</html>

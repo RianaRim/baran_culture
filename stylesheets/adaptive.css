@@ -1,0 +1,82 @@
+@media screen and (max-width: 600px) {
+  #burger {
+    width: 40px;
+    height: 26px;
+    position: fixed;
+    z-index: 3;
+    margin-top: 4vw;
+    margin-left: 2vw;
+    cursor: pointer;
+  }
+  #burger::after,
+  #burger::before {
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: transform ease 0.8s;
+  }
+  #burger::before {
+    top: 13px;
+  }
+  #burger.active::before {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+  #burger.active::after {
+    transform: rotate(-45deg);
+  }
+  .blueRec {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 3.4vw 2vw 3.4vw;
+    gap: 4vw;
+    transition: transform ease 0.8s;
+    transform: translateX(-100%);
+  }
+  .blueRec a {
+    font-size: 8vw;
+    position: relative;
+  }
+  .blueRec p {
+    font-size: 8vw;
+    position: relative;
+  }
+  #main {
+    margin-left: 1vw;
+  }
+  #time {
+    margin-left: 1vw;
+  }
+  .blueRec #fullLogo {
+    display: none;
+  }
+  #burger.active + .blueRec {
+    transform: translateX(0);
+  }
+  .blueRec a:not(.active)::before {
+    content: '';
+    position: absolute;
+    right: 6.4vw;
+    width: 8vw;
+    height: 8vw;
+    opacity: 0;
+    transition:
+      transform ease 0.8s,
+      opacity ease 0.2s;
+  }
+  .blueRec a:not(.active):hover::before {
+    opacity: 1;
+    transform: translateX(3vw);
+  }
+}
