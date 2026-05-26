@@ -7,12 +7,15 @@ function windowIcon() {
   let icons = document.querySelectorAll('.window-icon')
 
   icons.forEach((icon) => {
-    icon.addEventListener('click', () => {
-      icons.forEach((otherIcon) => {
-        otherIcon.classList.remove('active')
-      })
+    // icon.addEventListener('click', () => {
+    //   icons.forEach((otherIcon) => {
+    //     otherIcon.classList.remove('active')
+    //   })
 
-      icon.classList.add('active')
+    //   icon.classList.add('active')
+    // })
+    icon.addEventListener('click', () => {
+      icon.classList.toggle('active')
     })
   })
 }
@@ -32,10 +35,13 @@ function createBlocks() {
   let container = document.querySelector('.paleolit')
   let blockCount = 20
 
+  let links = ['images/paleolitBlock.svg', 'images/paleolitBlock.svg']
+
   for (let i = 0; i < blockCount; i++) {
     let block = document.createElement('img')
     block.classList.add('paleolit_block')
     block.src = 'images/paleolitBlock.svg'
+    // block.src = links[Math.floor(links.length * Math.random() + 1)]
     block.alt = 'фоновый элемент'
 
     // Размер в vw для адаптивности, диапазон 2–5 vw
