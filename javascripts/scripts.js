@@ -2,18 +2,32 @@ burgerMenu()
 createBlocks()
 parallax()
 windowIcon()
+timeTracker()
+
+function timeTracker() {
+  let startTime = Date.now()
+
+  function updateTimer() {
+    const elapsed = Date.now() - startTime
+    const seconds = Math.floor(elapsed / 1000)
+    const minutes = Math.floor(seconds / 60)
+    const hours = Math.floor(minutes / 60)
+
+    const formattedSeconds = (seconds % 60).toString().padStart(2, '0')
+    const formattedMinutes = (minutes % 60).toString().padStart(2, '0')
+    const formattedHours = hours.toString().padStart(2, '0')
+
+    document.getElementById('time').textContent =
+      `${formattedHours}:${formattedMinutes}:${formattedSeconds}`
+  }
+
+  setInterval(updateTimer, 1000)
+}
 
 function windowIcon() {
   let icons = document.querySelectorAll('.window-icon')
 
   icons.forEach((icon) => {
-    // icon.addEventListener('click', () => {
-    //   icons.forEach((otherIcon) => {
-    //     otherIcon.classList.remove('active')
-    //   })
-
-    //   icon.classList.add('active')
-    // })
     icon.addEventListener('click', () => {
       icon.classList.toggle('active')
     })
@@ -35,13 +49,17 @@ function createBlocks() {
   let container = document.querySelector('.paleolit')
   let blockCount = 20
 
-  let links = ['images/paleolitBlock.svg', 'images/paleolitBlock.svg']
+  let links = [
+    'images/paleolitBlock1.svg',
+    'images/paleolitBlock2.svg',
+    'images/paleolitBlock3.svg'
+  ]
 
   for (let i = 0; i < blockCount; i++) {
     let block = document.createElement('img')
     block.classList.add('paleolit_block')
-    block.src = 'images/paleolitBlock.svg'
-    // block.src = links[Math.floor(links.length * Math.random() + 1)]
+    // block.src = 'images/paleolitBlock1.svg'
+    block.src = links[Math.floor(links.length * Math.random())]
     block.alt = 'фоновый элемент'
 
     // Размер в vw для адаптивности, диапазон 2–5 vw

@@ -92,7 +92,12 @@ p {
 #time {
   color: #fdfdfd;
   padding-top: 0.85vw;
-  margin-left: 29.5vw;
+  margin-left: 29vw;
+}
+#timeName {
+  color: #fdfdfd;
+  padding-top: 0.85vw;
+  margin-left: 0.3vw;
 }
 
 /* ____________________главный экран____________________ */
@@ -152,7 +157,10 @@ p {
 .window-icon {
   position: relative;
 }
-.window-icon img {
+.window-icon #img_1,
+#img_2,
+#img_3,
+#img_4 {
   width: 1.8vw;
   height: 1.8vw;
   margin-top: 1.3vw;
@@ -177,13 +185,6 @@ p {
 .window-icon.active img:nth-of-type(2) {
   opacity: 1;
 }
-/* .window-icon.active .inactive-img {
-  display: none;
-}
-
-.window-icon.active img:not(.inactive-img) {
-  display: block;
-} */
 
 .textWindow_1 {
   display: flex;
