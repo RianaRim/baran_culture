@@ -154,16 +154,25 @@ p {
   display: flex;
   flex-direction: column;
 }
-.window-icon {
+.window-icon-1,
+.window-icon-2,
+.window-icon-3,
+.window-icon-4,
+.window-icon-5,
+.window-icon-6 {
   position: relative;
 }
-.window-icon #img_1,
+
+/* __________________кнопки для вызова окон__________________ */
+#img_1,
 #img_2,
 #img_3,
-#img_4 {
+#img_4,
+#img_5,
+#img_6 {
   width: 1.8vw;
   height: 1.8vw;
-  margin-top: 1.3vw;
+  margin-top: 4vw;
   margin-left: 2vw;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -186,6 +195,25 @@ p {
   opacity: 1;
 }
 
+#img_2 {
+  top: 3vw;
+}
+#img_3 {
+  left: 12.3vw;
+}
+#img_4 {
+  top: 3vw;
+  left: 12.3vw;
+}
+#img_5 {
+  top: 6vw;
+}
+#img_6 {
+  top: 6vw;
+  left: 12.3vw;
+}
+
+/* _________________описание кнопок_________________ */
 .textWindow_1 {
   display: flex;
   flex-direction: column;
@@ -215,6 +243,172 @@ p {
   margin-top: 2vw;
 }
 
+/* ________________окна с контентом________________ */
+.window_1 {
+  width: 26vw;
+  height: 20vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 15vw;
+  left: 40vw;
+  z-index: 1000;
+  cursor: move;
+  user-select: none;
+  display: none;
+}
+.stroke_1 {
+  width: 25vw;
+  height: 17.5vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 2vw 0.5vw 0.5vw 0.5vw;
+}
+.exit_1 {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 0.4vw;
+  left: 24.6vw;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stezhok';
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+.ornam_1 {
+  position: absolute;
+  top: 19.4vw;
+  left: 0.5vw;
+}
+.window_2 {
+  width: 27vw;
+  height: 7vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 10vw;
+  left: 30vw;
+  z-index: 1;
+  cursor: move;
+  user-select: none;
+  display: none;
+}
+.stroke_2 {
+  width: 26vw;
+  height: 4.5vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 2vw 0.5vw 0.5vw 0.5vw;
+}
+.exit_2 {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 0.4vw;
+  left: 25.6vw;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stezhok';
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+.ornam_2 {
+  position: absolute;
+  top: 6.4vw;
+  left: 1vw;
+}
+.window_3 {
+  width: 27vw;
+  height: 7vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 36.5vw;
+  left: 55vw;
+  z-index: 1;
+  cursor: move;
+  user-select: none;
+  display: none;
+}
+.stroke_3 {
+  width: 26vw;
+  height: 4.5vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 2vw 0.5vw 0.5vw 0.5vw;
+}
+.exit_3 {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 0.4vw;
+  left: 25.6vw;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stezhok';
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+.ornam_3 {
+  position: absolute;
+  top: 6.5vw;
+  left: 1vw;
+}
+.window_4 {
+  width: 16vw;
+  height: 44vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 3vw;
+  left: 83vw;
+  z-index: 1;
+  cursor: move;
+  user-select: none;
+  display: none;
+}
+.stroke_4 {
+  width: 13vw;
+  height: 43vw;
+  background-color: #fdfdfd;
+  margin: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.work {
+  padding: 0.5vw;
+  animation: carousel 40s linear infinite;
+}
+.exit_4 {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 0.5vw;
+  left: 14.6vw;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stezhok';
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+
 .baran {
   font-family: 'Stezhok';
   font-size: 20vw;
@@ -233,4 +427,179 @@ p {
   top: 32.6vw;
   left: 0.7vw;
   z-index: 1;
+}
+
+/* ______________страница с проектами______________ */
+.projectScreen {
+  width: 100%;
+  height: 48vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.buttonScreen {
+  width: 39.5%;
+  height: 48vw;
+  background-color: #0504ff;
+}
+.stroke_5 {
+  width: 37vw;
+  height: 44.4vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 0.5vw 0.5vw 0.5vw 1vw;
+}
+.stroke_6 {
+  position: absolute;
+  width: 36.3vw;
+  height: 42.2vw;
+  top: 4.3vw;
+  left: 0.05vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 0.5vw 0.5vw 0.5vw 1.3vw;
+}
+.exit_5 {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 3.3vw;
+  left: 36.7vw;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stezhok';
+  font-size: 1.6vw;
+  cursor: pointer;
+}
+#windowName_7,
+#windowName_8,
+#windowName_9,
+#windowName_10,
+#windowName_11,
+#windowName_12 {
+  font-family: 'Architexture';
+  font-size: 0.9vw;
+  color: #fdfdfd;
+  font-weight: 500;
+  margin-left: 2vw;
+  margin-top: 0.6vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+}
+.pageIcon2 {
+  position: absolute;
+  top: 5.5vw;
+  left: 36vw;
+}
+.pageIcon3 {
+  position: absolute;
+  top: 8.1vw;
+  left: 36vw;
+}
+.pageIcon4 {
+  position: absolute;
+  top: 8.1vw;
+  left: 34.7vw;
+}
+.pageIcon5 {
+  position: absolute;
+  top: 10.6vw;
+  left: 34.7vw;
+}
+.pageIcon6 {
+  position: absolute;
+  top: 10.6vw;
+  left: 36vw;
+}
+.pageIcon7 {
+  position: absolute;
+  top: 10.6vw;
+  left: 33.4vw;
+}
+.pageIcon8 {
+  position: absolute;
+  top: 13.1vw;
+  left: 36vw;
+}
+.pageIcon9 {
+  position: absolute;
+  top: 13.1vw;
+  left: 34.7vw;
+}
+.pageIcon10 {
+  position: absolute;
+  top: 13.1vw;
+  left: 33.4vw;
+}
+.pageIcon11 {
+  position: absolute;
+  top: 13.1vw;
+  left: 32.1vw;
+}
+.pageIcon12 {
+  position: absolute;
+  top: 15.6vw;
+  left: 36vw;
+}
+.pageIcon13 {
+  position: absolute;
+  top: 15.6vw;
+  left: 34.7vw;
+}
+.pageIcon14 {
+  position: absolute;
+  top: 15.6vw;
+  left: 33.4vw;
+}
+.pageIcon15 {
+  position: absolute;
+  top: 15.6vw;
+  left: 32.1vw;
+}
+.pageIcon16 {
+  position: absolute;
+  top: 15.6vw;
+  left: 30.8vw;
+}
+.pageIcon17 {
+  position: absolute;
+  top: 18.1vw;
+  left: 36vw;
+}
+.pageIcon18 {
+  position: absolute;
+  top: 18.1vw;
+  left: 34.7vw;
+}
+.pageIcon19 {
+  position: absolute;
+  top: 18.1vw;
+  left: 33.4vw;
+}
+.pageIcon20 {
+  position: absolute;
+  top: 18.1vw;
+  left: 32.1vw;
+}
+.pageIcon21 {
+  position: absolute;
+  top: 18.1vw;
+  left: 30.8vw;
+}
+.pageIcon22 {
+  position: absolute;
+  top: 18.1vw;
+  left: 29.5vw;
+}
+.hoverScreen {
+  width: 30vw;
+  height: 22vw;
+  background-color: #0504ff;
+  margin: 12vw 15vw;
 }

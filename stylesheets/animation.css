@@ -8,3 +8,11 @@
     transform: scale(0.6);
   }
 }
+@keyframes carousel {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-4970px);
+  }
+}
