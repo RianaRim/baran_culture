@@ -1,5 +1,41 @@
 // ________________таймер сайта________________
 timeTracker()
+// _____________картинки по ховеру_____________
+hoverImage()
+
+function hoverImage() {
+  document.addEventListener('DOMContentLoaded', function () {
+    const hoverScreen = document.querySelector('.hoverScreen')
+    const windowNames = document.querySelectorAll('[id^="windowName_"]')
+    const images = hoverScreen.querySelectorAll('.windowContent')
+    let currentImageIndex = 0
+    let animationInterval
+
+    function showNextImage() {
+      images.forEach((img) => {
+        img.style.opacity = '0'
+      })
+      images[currentImageIndex].style.opacity = '1'
+      currentImageIndex = (currentImageIndex + 1) % images.length
+    }
+
+    function startAnimation() {
+      animationInterval = setInterval(showNextImage, 400)
+    }
+
+    function stopAnimation() {
+      clearInterval(animationInterval)
+      images.forEach((img) => {
+        img.style.opacity = '0'
+      })
+    }
+
+    windowNames.forEach((name) => {
+      name.addEventListener('mouseenter', startAnimation)
+      name.addEventListener('mouseleave', stopAnimation)
+    })
+  })
+}
 
 // ________________таймер сайта________________
 function timeTracker() {
