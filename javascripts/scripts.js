@@ -18,6 +18,7 @@ windowDrag1()
 windowDrag2()
 windowDrag3()
 windowDrag4()
+windowDrag5()
 
 // _______________включение/выключение окон_______________
 windowButton()
@@ -50,6 +51,39 @@ function windowButton() {
 }
 
 // ____________окна с перемещением____________
+function windowDrag5() {
+  document.addEventListener('DOMContentLoaded', function () {
+    let window1 = document.querySelector('.window_5')
+
+    let isDragging = false
+    let offsetX = 0
+    let offsetY = 0
+
+    window1.addEventListener('mousedown', function (e) {
+      isDragging = true
+
+      let rect = window1.getBoundingClientRect()
+      offsetX = e.clientX - rect.left
+      offsetY = e.clientY - rect.top
+
+      e.preventDefault()
+    })
+
+    document.addEventListener('mousemove', function (e) {
+      if (!isDragging) return
+
+      let newX = e.clientX - offsetX
+      let newY = e.clientY - offsetY
+
+      window1.style.left = newX + 'px'
+      window1.style.top = newY + 'px'
+    })
+
+    document.addEventListener('mouseup', function () {
+      isDragging = false
+    })
+  })
+}
 function windowDrag4() {
   document.addEventListener('DOMContentLoaded', function () {
     let window1 = document.querySelector('.window_4')

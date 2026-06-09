@@ -27,3 +27,11 @@
     transform: rotate(0deg);
   }
 }
+@keyframes carousel2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
