@@ -3,7 +3,7 @@
   width: 100%;
   height: 48vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .buttonScreen {
@@ -56,10 +56,36 @@
   font-size: 0.9vw;
   color: #fdfdfd;
   font-weight: 500;
-  margin-left: 2vw;
-  margin-top: 0.6vw;
-  padding-top: 0.2vw;
-  padding-bottom: 0.2vw;
+  padding-left: 2vw;
+  padding-top: 0.9vw;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+hr {
+  display: block;
+  margin: 0 auto;
+}
+.rec_7,
+.rec_8,
+.rec_9,
+.rec_10,
+.rec_11,
+.rec_12 {
+  width: 100%;
+  height: 2.5vw;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  transition: ease 0.6s;
+}
+.rec_7:hover,
+.rec_8:hover,
+.rec_9:hover,
+.rec_10:hover,
+.rec_11:hover,
+.rec_12:hover {
+  background-color: #6767fc;
 }
 .pageIcon2 {
   position: absolute;
@@ -67,226 +93,298 @@
   left: 36vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon2:hover {
   animation-play-state: running;
 }
 .pageIcon3 {
   position: absolute;
-  top: 8.1vw;
+  top: 8.2vw;
   left: 36vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon3:hover {
   animation-play-state: running;
 }
 .pageIcon4 {
   position: absolute;
-  top: 8.1vw;
+  top: 8.2vw;
   left: 34.7vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon4:hover {
   animation-play-state: running;
 }
 .pageIcon5 {
   position: absolute;
-  top: 10.6vw;
+  top: 10.8vw;
   left: 34.7vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon5:hover {
   animation-play-state: running;
 }
 .pageIcon6 {
   position: absolute;
-  top: 10.6vw;
+  top: 10.8vw;
   left: 36vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon6:hover {
   animation-play-state: running;
 }
 .pageIcon7 {
   position: absolute;
-  top: 10.6vw;
+  top: 10.8vw;
   left: 33.4vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon7:hover {
   animation-play-state: running;
 }
 .pageIcon8 {
   position: absolute;
-  top: 13.1vw;
+  top: 13.4vw;
   left: 36vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon8:hover {
   animation-play-state: running;
 }
 .pageIcon9 {
   position: absolute;
-  top: 13.1vw;
+  top: 13.4vw;
   left: 34.7vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon9:hover {
   animation-play-state: running;
 }
 .pageIcon10 {
   position: absolute;
-  top: 13.1vw;
+  top: 13.4vw;
   left: 33.4vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon10:hover {
   animation-play-state: running;
 }
 .pageIcon11 {
   position: absolute;
-  top: 13.1vw;
+  top: 13.4vw;
   left: 32.1vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon11:hover {
   animation-play-state: running;
 }
 .pageIcon12 {
   position: absolute;
-  top: 15.6vw;
+  top: 16vw;
   left: 36vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon12:hover {
   animation-play-state: running;
 }
 .pageIcon13 {
   position: absolute;
-  top: 15.6vw;
+  top: 16vw;
   left: 34.7vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon13:hover {
   animation-play-state: running;
 }
 .pageIcon14 {
   position: absolute;
-  top: 15.6vw;
+  top: 16vw;
   left: 33.4vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon14:hover {
   animation-play-state: running;
 }
 .pageIcon15 {
   position: absolute;
-  top: 15.6vw;
+  top: 16vw;
   left: 32.1vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon15:hover {
   animation-play-state: running;
 }
 .pageIcon16 {
   position: absolute;
-  top: 15.6vw;
+  top: 16vw;
   left: 30.8vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon16:hover {
   animation-play-state: running;
 }
 .pageIcon17 {
   position: absolute;
-  top: 18.1vw;
+  top: 18.6vw;
   left: 36vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon17:hover {
   animation-play-state: running;
 }
 .pageIcon18 {
   position: absolute;
-  top: 18.1vw;
+  top: 18.6vw;
   left: 34.7vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon18:hover {
   animation-play-state: running;
 }
 .pageIcon19 {
   position: absolute;
-  top: 18.1vw;
+  top: 18.6vw;
   left: 33.4vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon19:hover {
   animation-play-state: running;
 }
 .pageIcon20 {
   position: absolute;
-  top: 18.1vw;
+  top: 18.6vw;
   left: 32.1vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon20:hover {
   animation-play-state: running;
 }
 .pageIcon21 {
   position: absolute;
-  top: 18.1vw;
+  top: 18.6vw;
   left: 30.8vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon21:hover {
   animation-play-state: running;
 }
 .pageIcon22 {
   position: absolute;
-  top: 18.1vw;
+  top: 18.6vw;
   left: 29.5vw;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
+  z-index: 2;
 }
 .pageIcon22:hover {
   animation-play-state: running;
 }
 
-.hoverScreen {
+.hoverScreen_1 {
   width: 30vw;
   height: 22vw;
   background-color: transparent;
   margin: 12vw 15vw;
-  position: relative;
+  position: absolute;
+  top: -7vw;
+  left: 46vw;
   overflow: hidden;
   animation: imageRotate 0.6s linear infinite;
   animation-play-state: paused;
 }
-.windowContent {
+.hoverScreen_2 {
+  width: 30vw;
+  height: 22vw;
+  background-color: transparent;
+  margin: 12vw 15vw;
+  position: absolute;
+  top: 10vw;
+  left: 28vw;
+  overflow: hidden;
+  animation: imageRotate 0.6s linear infinite;
+  animation-play-state: paused;
+}
+.windowContent,
+.windowContent2 {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: absolute;
   margin: 0 auto;
   padding: 0.5vw 0.5vw;
   opacity: 0;
+}
+
+/* ______________окна с информацией______________ */
+.contentScreen {
+  width: 59.5%;
+}
+.windowScreen_1 {
+  width: 60%;
+  height: 45vw;
+  background-color: #0504ff;
+  position: absolute;
+  top: 2.5vw;
+  left: 39.5vw;
+  display: none;
+}
+.stroke_7 {
+  position: absolute;
+  width: 58.3vw;
+  height: 44.4vw;
+  top: 0vw;
+  left: 0.05vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 0.5vw 0.5vw 0.5vw 1.3vw;
+}
+.stroke_8 {
+  position: absolute;
+  width: 57.5vw;
+  height: 42vw;
+  top: 0.5vw;
+  left: 0.4vw;
+  outline-style: solid;
+  outline-width: 0.15vw;
+  outline-color: #fdfdfd;
+  margin: 1.8vw 0.5vw 0.5vw 1.3vw;
 }

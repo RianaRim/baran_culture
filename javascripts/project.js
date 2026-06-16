@@ -1,13 +1,68 @@
 // ________________таймер сайта________________
 timeTracker()
-// _____________картинки по ховеру_____________
-hoverImage()
 
-function hoverImage() {
+// _____________картинки по ховеру_____________
+hoverImage1()
+hoverImage2()
+// hoverImage3()
+// hoverImage4()
+// hoverImage5()
+// hoverImage6()
+
+// ____________подсветка по ховеру____________
+buttonWindow1()
+
+function buttonWindow1() {
+  let button = document.querySelector('.rec_7')
+  let window = document.querySelector('.windowScreen_1')
+
+  button.addEventListener('click', () => {
+    window.style.display = 'block'
+  })
+  window.addEventListener('click', () => {
+    window.style.display = 'none'
+  })
+}
+
+function hoverImage2() {
   document.addEventListener('DOMContentLoaded', function () {
-    const hoverScreen = document.querySelector('.hoverScreen')
-    const windowNames = document.querySelectorAll('[id^="windowName_"]')
-    const images = hoverScreen.querySelectorAll('.windowContent')
+    let hoverScreen = document.querySelector('.hoverScreen_2')
+    let windowNames = document.querySelectorAll('#windowName_8')
+    let images = hoverScreen.querySelectorAll('.windowContent2')
+    let currentImageIndex = 0
+    let animationInterval
+
+    function showNextImage() {
+      images.forEach((img) => {
+        img.style.opacity = '0'
+      })
+      images[currentImageIndex].style.opacity = '1'
+      currentImageIndex = (currentImageIndex + 1) % images.length
+    }
+
+    function startAnimation() {
+      animationInterval = setInterval(showNextImage, 400)
+    }
+
+    function stopAnimation() {
+      clearInterval(animationInterval)
+      images.forEach((img) => {
+        img.style.opacity = '0'
+      })
+    }
+
+    windowNames.forEach((name) => {
+      name.addEventListener('mouseenter', startAnimation)
+      name.addEventListener('mouseleave', stopAnimation)
+    })
+  })
+}
+
+function hoverImage1() {
+  document.addEventListener('DOMContentLoaded', function () {
+    let hoverScreen = document.querySelector('.hoverScreen_1')
+    let windowNames = document.querySelectorAll('#windowName_7')
+    let images = hoverScreen.querySelectorAll('.windowContent')
     let currentImageIndex = 0
     let animationInterval
 
