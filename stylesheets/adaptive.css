@@ -1,18 +1,19 @@
 @media screen and (max-width: 600px) {
+  /* ______________бургер-меню______________ */
   #burger {
     width: 40px;
     height: 26px;
     position: fixed;
-    z-index: 3;
-    margin-top: 4vw;
-    margin-left: 2vw;
+    z-index: 5;
+    margin-top: 5vw;
+    margin-left: 2.5vw;
     cursor: pointer;
   }
   #burger::after,
   #burger::before {
     width: 100%;
-    height: 2px;
-    background-color: #222;
+    height: 2.5px;
+    background-color: #6767fc;
     border-radius: 10px;
     content: '';
     position: absolute;
@@ -35,7 +36,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     border-radius: 0;
     flex-direction: column;
     justify-content: flex-start;
@@ -58,8 +59,11 @@
   #time {
     margin-left: 1vw;
   }
-  .blueRec #fullLogo {
+  #name {
     display: none;
+  }
+  .blueRec #fullLogo {
+    width: 20%;
   }
   #burger.active + .blueRec {
     transform: translateX(0);
@@ -78,5 +82,68 @@
   .blueRec a:not(.active):hover::before {
     opacity: 1;
     transform: translateX(3vw);
+  }
+  /* _______________главный экран_______________ */
+  .header {
+    height: 3.5vw;
+    background-color: #0504ff;
+  }
+  .windows {
+    display: none;
+  }
+  .mainScreen {
+    height: 221vw;
+  }
+  .content {
+    width: 100%;
+    height: 221vw;
+  }
+  .baran,
+  .baran_2 {
+    font-size: 25vw;
+    top: -3.5vw;
+    left: 59.5vw;
+  }
+  .paleolit {
+    display: none;
+  }
+  .paleolitMobile {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: visible;
+    display: block;
+  }
+  .paleolit_block_mobile {
+    position: absolute;
+    animation: block 4s linear infinite alternate;
+  }
+  .blueBorder_1,
+  .blueBorder_2 {
+    width: 1vw;
+    height: 221vw;
+  }
+  .blueBorder_2 {
+    left: 99.07vw;
+  }
+  .blueBorder_3 {
+    width: 100%;
+    height: 1vw;
+    top: 221.1vw;
+    left: 0;
+  }
+  .iconAnimateMobile {
+    width: 37vw;
+    height: 31vw;
+    background-image: url(../images/iconAnimateMobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 93vw;
+    left: 30vw;
+    animation: iconMobile 1.5s infinite steps(1);
   }
 }

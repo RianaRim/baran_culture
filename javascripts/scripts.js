@@ -3,6 +3,7 @@ burgerMenu()
 
 // _________________рандомные штампы на фоне_________________
 createBlocks()
+createBlocksMobile()
 
 // _________________эффект паралакса на фоне_________________
 parallax()
@@ -262,6 +263,40 @@ function parallax() {
 }
 
 // _________________рандомные штампы на фоне_________________
+function createBlocksMobile() {
+  let container = document.querySelector('.paleolitMobile')
+  let blockCount = 20
+
+  let links = [
+    'images/paleolitBlock4.svg',
+    'images/paleolitBlock5.svg',
+    'images/paleolitBlock6.svg'
+  ]
+
+  for (let i = 0; i < blockCount; i++) {
+    let block = document.createElement('img')
+    block.classList.add('paleolit_block_mobile')
+    // block.src = 'images/paleolitBlock1.svg'
+    block.src = links[Math.floor(links.length * Math.random())]
+    block.alt = 'фоновый элемент'
+
+    // Размер в vw для адаптивности, диапазон 2–5 vw
+    let size = Math.random() * 20 + 2
+
+    block.style.cssText = `
+      width: ${size}vw;
+      height: ${size}vw;
+      position: absolute;
+      top: ${Math.random() * 100}%;
+      left: ${Math.random() * 100}%;
+      animation-delay: ${Math.random() * 6}s;
+      z-index: 1;
+      pointer-events: none;
+    `
+
+    container.appendChild(block)
+  }
+}
 function createBlocks() {
   let container = document.querySelector('.paleolit')
   let blockCount = 20

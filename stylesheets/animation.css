@@ -35,3 +35,14 @@
     transform: translateX(-500px);
   }
 }
+@keyframes iconMobile {
+  0% {
+    background-position-x: 0px;
+  }
+  33% {
+    background-position-x: -250px;
+  }
+  66% {
+    background-position-x: -480px;
+  }
+}

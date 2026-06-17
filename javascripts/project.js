@@ -1,3 +1,6 @@
+// ________________бургер-меню________________
+burgerMenu()
+
 // ________________таймер сайта________________
 timeTracker()
 
@@ -9,21 +12,7 @@ hoverImage2()
 // hoverImage5()
 // hoverImage6()
 
-// ____________подсветка по ховеру____________
-buttonWindow1()
-
-function buttonWindow1() {
-  let button = document.querySelector('.rec_7')
-  let window = document.querySelector('.windowScreen_1')
-
-  button.addEventListener('click', () => {
-    window.style.display = 'block'
-  })
-  window.addEventListener('click', () => {
-    window.style.display = 'none'
-  })
-}
-
+// _____________картинки по ховеру_____________
 function hoverImage2() {
   document.addEventListener('DOMContentLoaded', function () {
     let hoverScreen = document.querySelector('.hoverScreen_2')
@@ -111,4 +100,13 @@ function timeTracker() {
   }
 
   setInterval(updateTimer, 1000)
+}
+
+// ________________бургер-меню________________
+function burgerMenu() {
+  let burger = document.querySelector('#burger')
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active')
+  })
 }
