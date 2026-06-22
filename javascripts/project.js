@@ -188,10 +188,12 @@ function modalWindowImg() {
     modal.style.display = 'none'
   })
 
+  console.log(thumbnails)
+
   thumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener('click', (e) => {
-      e.preventDefault()
-      if (!modal || !modalImg || !captionP) return
+      // e.preventDefault()
+      // if (!modal || !modalImg || !captionP) return
 
       modal.style.display = 'block'
 
