@@ -40,9 +40,19 @@
     background-position-x: 0px;
   }
   33% {
-    background-position-x: -250px;
+    background-position-x: -50vw;
   }
   66% {
-    background-position-x: -480px;
+    background-position-x: -95vw;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
   }
 }

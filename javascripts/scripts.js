@@ -5,6 +5,9 @@ burgerMenu()
 createBlocks()
 createBlocksMobile()
 
+// ______________изображения по движению пальца______________
+imageElementMobile()
+
 // _________________эффект паралакса на фоне_________________
 parallax()
 
@@ -24,11 +27,42 @@ windowDrag5()
 // _______________включение/выключение окон_______________
 windowButton()
 
+// ____________________ползунок звука____________________
+volumeControl()
+
+// ____________________ползунок звука____________________
+function volumeControl() {
+  let video = document.querySelector('.dolgan')
+  let volumeControl = document.getElementById('volumeControl')
+
+  if (video && volumeControl) {
+    volumeControl.addEventListener('input', (e) => {
+      let value = parseFloat(e.target.value)
+      video.volume = value
+
+      if (value === 0) {
+        video.muted = true
+      } else {
+        video.muted = false
+      }
+    })
+
+    video.addEventListener('volumechange', () => {
+      if (!video.muted) {
+        volumeControl.value = video.volume
+      } else {
+        volumeControl.value = 0
+      }
+    })
+  }
+}
+
 // _______________включение/выключение окон_______________
 function windowButton() {
   document.addEventListener('DOMContentLoaded', function () {
     let windowIcons = document.querySelectorAll('.window-icon')
     let windows = document.querySelectorAll('[class^="window_"]')
+    let video = document.querySelector('.dolgan')
     let exitButtons = document.querySelectorAll('[class^="exit_"]')
 
     windowIcons.forEach((icon, index) => {
@@ -36,6 +70,14 @@ function windowButton() {
         let targetWindow = document.querySelector(`.window_${index + 1}`)
         if (targetWindow) {
           targetWindow.style.display = 'block'
+
+          if (video) {
+            video
+              .play()
+              .catch((e) =>
+                console.log('Автовоспроизведение заблокировано браузером')
+              )
+          }
         }
       })
     })
@@ -45,6 +87,13 @@ function windowButton() {
         let windowToClose = this.closest('[class^="window_"]')
         if (windowToClose) {
           windowToClose.style.display = 'none'
+        }
+
+        if (video) {
+          video.pause()
+          video.currentTime = 0
+          video.muted = true
+          video.volume = 0
         }
       })
     })
@@ -259,6 +308,59 @@ function parallax() {
     let y = (event.clientY / window.innerHeight + 0.1) * 1
 
     main.style.transform = `translate(${x}vw, ${y}vw)`
+  })
+}
+
+// ______________изображения по движению пальца______________
+function imageElementMobile() {
+  let mainScreen = document.querySelector('.mainScreen')
+
+  if (!mainScreen) return
+
+  let images = [
+    'images/work1.png',
+    'images/work2.png',
+    'images/work3.png',
+    'images/work4.png',
+    'images/work5.png',
+    'images/work6.png',
+    'images/work7.png',
+    'images/work8.png',
+    'images/work9.png',
+    'images/work10.png',
+    'images/work11.png',
+    'images/work12.png',
+    'images/work13.png',
+    'images/work14.png',
+    'images/work15.png',
+    'images/work16.png',
+    'images/work17.png',
+    'images/work18.png'
+  ]
+
+  document.addEventListener('mousemove', (event) => {
+    let x = event.clientX
+    let y = event.clientY
+
+    let rect = mainScreen.getBoundingClientRect()
+
+    let posX = x - rect.left
+    let posY = y - rect.top
+
+    let randomImage = images[Math.floor(Math.random() * images.length)]
+
+    let img = document.createElement('img')
+    img.src = randomImage
+    img.className = 'imageElement'
+
+    img.style.left = posX + 'px'
+    img.style.top = posY + 'px'
+
+    mainScreen.appendChild(img)
+
+    setTimeout(() => {
+      img.remove()
+    }, 3000)
   })
 }
 
