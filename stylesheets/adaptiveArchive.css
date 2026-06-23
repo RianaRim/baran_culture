@@ -1,176 +1,5 @@
 @media screen and (max-width: 600px) {
-  /* ______________бургер-меню______________ */
-  #burger {
-    width: 40px;
-    height: 26px;
-    position: fixed;
-    z-index: 5;
-    margin-top: 5vw;
-    margin-left: 2.5vw;
-    cursor: pointer;
-    mix-blend-mode: difference;
-  }
-  #burger::after,
-  #burger::before {
-    width: 100%;
-    height: 2.5px;
-    background-color: #ffe600;
-    border-radius: 10px;
-    content: '';
-    position: absolute;
-    left: 0;
-    transition: transform ease 0.8s;
-  }
-  #burger::before {
-    top: 13px;
-  }
-  #burger.active::before {
-    top: 0px;
-    transform: rotate(45deg);
-  }
-  #burger.active::after {
-    transform: rotate(-45deg);
-  }
-  .blueRec {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    border-radius: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 60px 3.4vw 2vw 3.4vw;
-    gap: 4vw;
-    transition: transform ease 0.8s;
-    transform: translateX(-100%);
-  }
-  .blueRec a {
-    font-size: 8vw;
-    position: relative;
-  }
-  .blueRec p {
-    font-size: 8vw;
-    position: relative;
-  }
-  #main {
-    margin-left: 1vw;
-  }
-  #time {
-    margin-left: 1vw;
-  }
-  #name {
-    display: none;
-  }
-  .blueRec #fullLogo {
-    width: 20%;
-  }
-  #burger.active + .blueRec {
-    transform: translateX(0);
-  }
-  .blueRec a:not(.active)::before {
-    content: '';
-    position: absolute;
-    right: 6.4vw;
-    width: 8vw;
-    height: 8vw;
-    opacity: 0;
-    transition:
-      transform ease 0.8s,
-      opacity ease 0.2s;
-  }
-  .blueRec a:not(.active):hover::before {
-    opacity: 1;
-    transform: translateX(3vw);
-  }
-  /* _______________главный экран_______________ */
-  .header {
-    height: 3.5vw;
-    background-color: #0504ff;
-  }
-  .windows {
-    display: none;
-  }
-  .mainScreen {
-    height: 221vw;
-    overflow: hidden;
-  }
-  .content {
-    width: 100%;
-    height: 221vw;
-  }
-  .baran,
-  .baran_2 {
-    font-size: 30vw;
-    top: -5vw;
-    left: 52vw;
-  }
-  .paleolit {
-    display: none;
-  }
-  .paleolitMobile {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: visible;
-    display: block;
-  }
-  .paleolit_block_mobile {
-    position: absolute;
-    animation: block 4s linear infinite alternate;
-  }
-  .imageElement {
-    position: absolute;
-    display: block;
-    width: 25vw;
-    height: auto;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    opacity: 0.9;
-    animation: fadeOut 3s forwards;
-    background-color: transparent;
-    z-index: 3;
-  }
-  .work {
-    width: 30%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .blueBorder_1,
-  .blueBorder_2 {
-    width: 1vw;
-    height: 221vw;
-  }
-  .blueBorder_2 {
-    left: 99.07vw;
-  }
-  .blueBorder_3 {
-    width: 100%;
-    height: 1vw;
-    top: 221.1vw;
-    left: 0;
-  }
-  .iconAnimateMobile {
-    width: 42vw;
-    height: 36vw;
-    background-image: url(../images/iconAnimateMobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 93vw;
-    left: 29vw;
-    animation: iconMobile 1.5s infinite steps(1);
-  }
-
-  /* ______________экран с проектами______________ */
+  /* экран "об авторе" */
   body {
     height: 216.5vw;
   }
@@ -178,13 +7,13 @@
     height: 3.3vw;
     top: 220.8vw;
   }
-  .project {
+  .archive {
     font-family: 'Stezhok';
     font-size: 11vw;
     color: #fdfdfd;
     position: absolute;
     top: 1.6vw;
-    left: 64.7vw;
+    left: 73.7vw;
     z-index: 2;
   }
   .projectScreen {
@@ -393,7 +222,7 @@
     font-size: 4vw;
     left: 92.5vw;
   }
-  .screenButton_project {
+  .screenButton_archive {
     width: 3vw;
     height: 3vw;
     position: absolute;
@@ -415,7 +244,7 @@
   }
   .modalContent {
     max-width: 96%;
-    padding-top: 70vw;
+    padding-top: 0;
     padding-left: 3vw;
   }
   .modalText {

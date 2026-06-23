@@ -8,9 +8,9 @@ timeTracker()
 hoverImage1()
 hoverImage2()
 hoverImage3()
-hoverImage4()
-hoverImage5()
-hoverImage6()
+// hoverImage4()
+// hoverImage5()
+// hoverImage6()
 
 // ____________открытие/закрытие окна____________
 windowButton()
@@ -63,6 +63,30 @@ function windowButton() {
   })
 }
 
+// сворачивание окон
+collapseWindowMobile()
+
+// сворачивание окон
+function collapseWindowMobile() {
+  document.addEventListener('DOMContentLoaded', () => {
+    let buttons = document.querySelectorAll('.screenButton_about')
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        let parent = btn.parentElement
+        while (parent && !parent.matches('[class*="windowScreen_"]')) {
+          parent = parent.parentElement
+        }
+        if (!parent) return
+
+        let wasCollapsed = parent.classList.toggle('windowScreen_collapsed')
+
+        btn.textContent = wasCollapsed = '-'
+      })
+    })
+  })
+}
+
 // _____________картинки по ховеру_____________
 function hoverImage6() {
   document.addEventListener('DOMContentLoaded', function () {
@@ -81,7 +105,7 @@ function hoverImage6() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -114,7 +138,7 @@ function hoverImage5() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -147,7 +171,7 @@ function hoverImage4() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -180,7 +204,7 @@ function hoverImage3() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -213,7 +237,7 @@ function hoverImage2() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -246,7 +270,7 @@ function hoverImage1() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {

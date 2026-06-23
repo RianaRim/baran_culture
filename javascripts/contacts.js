@@ -12,277 +12,14 @@ hoverImage4()
 hoverImage5()
 hoverImage6()
 
+// сворачивание окон
+collapseWindowMobile()
+
 // ____________открытие/закрытие окна____________
 windowButton()
 
 // ______________окно на весь экран______________
 fullScreenButton()
-
-// ___________выпадающее окно с изображением и надписью___________
-modalWindowImg()
-modalWindowImg2()
-modalWindowImg3()
-modalWindowImg4()
-modalWindowImg5()
-modalWindowImg6()
-
-// надписи под изображениями
-thumbnail()
-thumbnail2()
-thumbnail3()
-thumbnail4()
-thumbnail5()
-thumbnail6()
-
-// сворачивание окон
-collapseWindowMobile()
-
-// сворачивание окон
-function collapseWindowMobile() {
-  document.addEventListener('DOMContentLoaded', () => {
-    let buttons = document.querySelectorAll('.screenButton_project')
-
-    buttons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        let parent = btn.parentElement
-        while (parent && !parent.matches('[class*="windowScreen_"]')) {
-          parent = parent.parentElement
-        }
-        if (!parent) return
-
-        let wasCollapsed = parent.classList.toggle('windowScreen_collapsed')
-
-        btn.textContent = wasCollapsed = '-'
-      })
-    })
-  })
-}
-
-// надписи под изображениями
-function thumbnail6() {
-  let modal = document.querySelector('.modalImgWindow_6')
-  let thumbnails = document.querySelectorAll('.thumbnail_6')
-  let modalImg = document.getElementById('modalImageSrc6')
-  let captionP = document.getElementById('currentCaption6')
-
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (e) => {
-      // e.preventDefault()
-      // if (!modal || !modalImg || !captionP) return
-
-      modal.style.display = 'block'
-
-      modalImg.src = thumbnail.src
-
-      let captionText = thumbnail.getAttribute('data-caption')
-      captionP.textContent = captionText || ''
-
-      let captionContainer = captionP.parentElement
-      if (captionContainer) {
-        captionContainer.style.display = captionText ? 'block' : 'none'
-      }
-    })
-  })
-
-  console.log(thumbnail)
-}
-function thumbnail5() {
-  let modal = document.querySelector('.modalImgWindow_5')
-  let thumbnails = document.querySelectorAll('.thumbnail_5')
-  let modalImg = document.getElementById('modalImageSrc5')
-  let captionP = document.getElementById('currentCaption5')
-
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (e) => {
-      // e.preventDefault()
-      // if (!modal || !modalImg || !captionP) return
-
-      modal.style.display = 'block'
-
-      modalImg.src = thumbnail.src
-
-      let captionText = thumbnail.getAttribute('data-caption')
-      captionP.textContent = captionText || ''
-
-      let captionContainer = captionP.parentElement
-      if (captionContainer) {
-        captionContainer.style.display = captionText ? 'block' : 'none'
-      }
-    })
-  })
-
-  console.log(thumbnail)
-}
-function thumbnail4() {
-  let modal = document.querySelector('.modalImgWindow_4')
-  let thumbnails = document.querySelectorAll('.thumbnail_4')
-  let modalImg = document.getElementById('modalImageSrc4')
-  let captionP = document.getElementById('currentCaption4')
-
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (e) => {
-      // e.preventDefault()
-      // if (!modal || !modalImg || !captionP) return
-
-      modal.style.display = 'block'
-
-      modalImg.src = thumbnail.src
-
-      let captionText = thumbnail.getAttribute('data-caption')
-      captionP.textContent = captionText || ''
-
-      let captionContainer = captionP.parentElement
-      if (captionContainer) {
-        captionContainer.style.display = captionText ? 'block' : 'none'
-      }
-    })
-  })
-
-  console.log(thumbnail)
-}
-function thumbnail3() {
-  let modal = document.querySelector('.modalImgWindow_3')
-  let thumbnails = document.querySelectorAll('.thumbnail_3')
-  let modalImg = document.getElementById('modalImageSrc3')
-  let captionP = document.getElementById('currentCaption3')
-
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (e) => {
-      // e.preventDefault()
-      // if (!modal || !modalImg || !captionP) return
-
-      modal.style.display = 'block'
-
-      modalImg.src = thumbnail.src
-
-      let captionText = thumbnail.getAttribute('data-caption')
-      captionP.textContent = captionText || ''
-
-      let captionContainer = captionP.parentElement
-      if (captionContainer) {
-        captionContainer.style.display = captionText ? 'block' : 'none'
-      }
-    })
-  })
-
-  console.log(thumbnail)
-}
-function thumbnail2() {
-  let modal = document.querySelector('.modalImgWindow_2')
-  let thumbnails = document.querySelectorAll('.thumbnail_2')
-  let modalImg = document.getElementById('modalImageSrc2')
-  let captionP = document.getElementById('currentCaption2')
-
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (e) => {
-      // e.preventDefault()
-      // if (!modal || !modalImg || !captionP) return
-
-      modal.style.display = 'block'
-
-      modalImg.src = thumbnail.src
-
-      let captionText = thumbnail.getAttribute('data-caption')
-      captionP.textContent = captionText || ''
-
-      let captionContainer = captionP.parentElement
-      if (captionContainer) {
-        captionContainer.style.display = captionText ? 'block' : 'none'
-      }
-    })
-  })
-
-  console.log(thumbnail)
-}
-function thumbnail() {
-  let modal = document.querySelector('.modalImgWindow_1')
-  let thumbnails = document.querySelectorAll('.thumbnail_1')
-  let modalImg = document.getElementById('modalImageSrc')
-  let captionP = document.getElementById('currentCaption')
-
-  thumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (e) => {
-      // e.preventDefault()
-      // if (!modal || !modalImg || !captionP) return
-
-      modal.style.display = 'block'
-
-      modalImg.src = thumbnail.src
-
-      let captionText = thumbnail.getAttribute('data-caption')
-      captionP.textContent = captionText || ''
-
-      let captionContainer = captionP.parentElement
-      if (captionContainer) {
-        captionContainer.style.display = captionText ? 'block' : 'none'
-      }
-    })
-  })
-
-  console.log(thumbnail)
-}
-
-// ___________выпадающее окно с изображением и надписью___________
-function modalWindowImg6() {
-  document.addEventListener('DOMContentLoaded', modalWindowImg)
-  let modal = document.querySelector('.modalImgWindow_6')
-
-  modal.addEventListener('click', (e) => {
-    modal.style.display = 'none'
-  })
-
-  console.log(modalWindowImg)
-}
-function modalWindowImg5() {
-  document.addEventListener('DOMContentLoaded', modalWindowImg)
-  let modal = document.querySelector('.modalImgWindow_5')
-
-  modal.addEventListener('click', (e) => {
-    modal.style.display = 'none'
-  })
-
-  console.log(modalWindowImg)
-}
-function modalWindowImg4() {
-  document.addEventListener('DOMContentLoaded', modalWindowImg)
-  let modal = document.querySelector('.modalImgWindow_4')
-
-  modal.addEventListener('click', (e) => {
-    modal.style.display = 'none'
-  })
-
-  console.log(modalWindowImg)
-}
-function modalWindowImg3() {
-  document.addEventListener('DOMContentLoaded', modalWindowImg)
-  let modal = document.querySelector('.modalImgWindow_3')
-
-  modal.addEventListener('click', (e) => {
-    modal.style.display = 'none'
-  })
-
-  console.log(modalWindowImg)
-}
-function modalWindowImg2() {
-  document.addEventListener('DOMContentLoaded', modalWindowImg)
-  let modal = document.querySelector('.modalImgWindow_2')
-
-  modal.addEventListener('click', (e) => {
-    modal.style.display = 'none'
-  })
-
-  console.log(modalWindowImg)
-}
-function modalWindowImg() {
-  document.addEventListener('DOMContentLoaded', modalWindowImg)
-  let modal = document.querySelector('.modalImgWindow_1')
-
-  modal.addEventListener('click', (e) => {
-    modal.style.display = 'none'
-  })
-
-  console.log(modalWindowImg)
-}
 
 // ______________окно на весь экран______________
 function fullScreenButton() {
@@ -329,6 +66,27 @@ function windowButton() {
   })
 }
 
+// сворачивание окон
+function collapseWindowMobile() {
+  document.addEventListener('DOMContentLoaded', () => {
+    let buttons = document.querySelectorAll('.screenButton_about')
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        let parent = btn.parentElement
+        while (parent && !parent.matches('[class*="windowScreen_"]')) {
+          parent = parent.parentElement
+        }
+        if (!parent) return
+
+        let wasCollapsed = parent.classList.toggle('windowScreen_collapsed')
+
+        btn.textContent = wasCollapsed = '-'
+      })
+    })
+  })
+}
+
 // _____________картинки по ховеру_____________
 function hoverImage6() {
   document.addEventListener('DOMContentLoaded', function () {
@@ -347,7 +105,7 @@ function hoverImage6() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -380,7 +138,7 @@ function hoverImage5() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -413,7 +171,7 @@ function hoverImage4() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -446,7 +204,7 @@ function hoverImage3() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -479,7 +237,7 @@ function hoverImage2() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {
@@ -512,7 +270,7 @@ function hoverImage1() {
     }
 
     function startAnimation() {
-      animationInterval = setInterval(showNextImage, 400)
+      animationInterval = setInterval(showNextImage, 570)
     }
 
     function stopAnimation() {

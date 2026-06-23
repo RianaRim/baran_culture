@@ -151,7 +151,7 @@ let animationInterval
 
 5. ИИ помог разобраться, как по клику мышкой или пальцем в адаптированной версии сайта добавлять изображения на главный экран
 
-// ******\_\_******изображения по движению пальца******\_\_******
+// **\*\***\_\_**\*\***изображения по движению пальца**\*\***\_\_**\*\***
 imageElementMobile()
 
 // **\*\***\_\_**\*\***изображения по движению пальца**\*\***\_\_**\*\***
@@ -197,6 +197,33 @@ let y = event.clientY
     setTimeout(() => {
       img.remove()
     }, 3000)
+
+})
+}
+
+6. ИИ помог разобраться, как сворачивать окна с информацией в мобильном адаптиве
+
+// сворачивание окон
+collapseWindowMobile()
+
+// сворачивание окон
+function collapseWindowMobile() {
+document.addEventListener('DOMContentLoaded', () => {
+let buttons = document.querySelectorAll('.screenButton_about')
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        let parent = btn.parentElement
+        while (parent && !parent.matches('[class*="windowScreen_"]')) {
+          parent = parent.parentElement
+        }
+        if (!parent) return
+
+        let wasCollapsed = parent.classList.toggle('windowScreen_collapsed')
+
+        btn.textContent = wasCollapsed = '-'
+      })
+    })
 
 })
 }

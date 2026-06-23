@@ -6,6 +6,7 @@
     <title>БЭРЭН—об авторе</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/about.css" />
+    <link rel="stylesheet" href="stylesheets/adaptiveAbout.css" />
     <link rel="icon" href="images/logotype.svg" type="images.svg" />
     <script defer src="javascripts/about.js"></script>
     <script type="importmap">
@@ -43,6 +44,8 @@
       <div class="blueBorder_1"></div>
       <div class="blueBorder_2"></div>
       <div class="blueBorder_3"></div>
+
+      <h1 class="about">Об авторе</h1>
     </section>
     <!-- _________________главный экран_________________ -->
     <section class="projectScreen">
@@ -81,8 +84,8 @@
         <img class="pageIcon4" src="images/page_icon2.svg" alt="" />
         <img class="pageIcon5" src="images/page_icon2.svg" alt="" />
         <img class="pageIcon6" src="images/page_icon2.svg" alt="" />
-        <!-- <img class="pageIcon7" src="images/page_icon2.svg" alt="" />
-        <img class="pageIcon8" src="images/page_icon2.svg" alt="" />
+        <img class="pageIcon7" src="images/page_icon2.svg" alt="" />
+        <!-- <img class="pageIcon8" src="images/page_icon2.svg" alt="" />
         <img class="pageIcon9" src="images/page_icon2.svg" alt="" />
         <img class="pageIcon10" src="images/page_icon2.svg" alt="" />
         <img class="pageIcon11" src="images/page_icon2.svg" alt="" />
@@ -99,6 +102,8 @@
         <img class="pageIcon22" src="images/page_icon2.svg" alt="" /> -->
       </div>
       <div class="contentScreen">
+        <div class="masks"></div>
+        <div class="masks2"></div>
         <div class="hoverScreen_1">
           <img class="windowContent" src="images/windowContent_45.png" alt="" />
           <img class="windowContent" src="images/windowContent_46.png" alt="" />
@@ -109,74 +114,78 @@
           <img class="windowContent" src="images/windowContent_51.png" alt="" />
         </div>
         <div class="hoverScreen_2">
-          <img class="windowContent2" src="images/windowContent_9.png" alt="" />
           <img
             class="windowContent2"
-            src="images/windowContent_10.png"
+            src="images/windowContent_52.png"
             alt=""
           />
           <img
             class="windowContent2"
-            src="images/windowContent_11.png"
+            src="images/windowContent_53.png"
             alt=""
           />
           <img
             class="windowContent2"
-            src="images/windowContent_12.png"
+            src="images/windowContent_54.png"
             alt=""
           />
           <img
             class="windowContent2"
-            src="images/windowContent_13.png"
+            src="images/windowContent_55.png"
             alt=""
           />
           <img
             class="windowContent2"
-            src="images/windowContent_14.png"
+            src="images/windowContent_56.png"
             alt=""
           />
           <img
             class="windowContent2"
-            src="images/windowContent_15.png"
+            src="images/windowContent_57.png"
+            alt=""
+          />
+          <img
+            class="windowContent2"
+            src="images/windowContent_58.png"
             alt=""
           />
         </div>
         <div class="hoverScreen_3">
           <img
             class="windowContent3"
-            src="images/windowContent_17.png"
+            src="images/windowContent_59.png"
             alt=""
           />
           <img
             class="windowContent3"
-            src="images/windowContent_18.png"
+            src="images/windowContent_60.png"
             alt=""
           />
           <img
             class="windowContent3"
-            src="images/windowContent_19.png"
+            src="images/windowContent_61.png"
             alt=""
           />
           <img
             class="windowContent3"
-            src="images/windowContent_20.png"
+            src="images/windowContent_62.png"
             alt=""
           />
           <img
             class="windowContent3"
-            src="images/windowContent_21.png"
+            src="images/windowContent_63.png"
             alt=""
           />
           <img
             class="windowContent3"
-            src="images/windowContent_22.png"
+            src="images/windowContent_64.png"
             alt=""
           />
-          <!-- <img
+          <img
             class="windowContent3"
-            src="images/windowContent_23.png"
+            src="images/windowContent_65.png"
             alt=""
-          /> -->
+          />
         </div>
         <!-- <div class="hoverScreen_4">
           <img
@@ -315,8 +324,14 @@
               <div id="describeInfo">
                 <p id="downT">
                   Меня зовут Антонихина Валерия, я молодой дизайнер, который
-                  учится в НИУ ВШЭ на профиле "дизайн и программирование". Мне
-                  21 год и я создаю проекты, в которых вижу свою эстетику.
+                  учится в НИУ ВШЭ <br />
+                  на профиле "дизайн и программирование". Мне 21 год и я создаю
+                  проекты, в которых <br />
+                  вижу свою эстетику. Спокойствие, миролюбие, утончённость, а
+                  иногда внезапность, нестандартность и вызов — это всё про
+                  меня. Я стремлюсь найти себя в этом мире <br />
+                  и развить мир в себе. Хочу быть больше связана с природой и
+                  различными культурами.
                 </p>
               </div>
             </div>
@@ -380,6 +395,7 @@
               />
             </div>
           </div>
+          <div class="screenButton_about">-</div>
           <button class="exit_1">х</button>
         </div>
         <div class="windowScreen_2">
@@ -406,11 +422,13 @@
               </div>
               <div id="describeInfo">
                 <p id="downT">
-                  Культура и хозяйство народа являются <br />
-                  её неотъемлемой частью. Именно это <br />
-                  и делает их отдельным, непохожим <br />
-                  на других, народом. Рыба, олени, собаки <br />
-                  и другие основные виды деятельности
+                  Я окончила Могилёвский Государственный Колледж Искусств (это в
+                  Беларуси) на мульти-дизайнера и преподавательскую
+                  деятельность. До поступления во ВШЭ мне удалось поработать по
+                  специальности. Но я решила не останавливаться на этом и
+                  организовать собственную персональную выставку, посвящённую
+                  портретам, отражающим мои внутренние ощущения мира через
+                  эмоции. На данный момент я изучаю веб-дизайн.
                 </p>
               </div>
             </div>
@@ -426,54 +444,55 @@
               <img
                 id="imgInfo"
                 class="imgInfo_8"
-                src="images/windowContent_9.png"
+                src="images/windowContent_52.png"
                 alt=""
                 data-caption="Традиционным для долган являлся кочевой образ жизни, который базировался на комплексном хозяйстве, включавшем охоту на дикого северного оленя, рыболовство и транспортное оленеводство"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_9"
-                src="images/windowContent_10.png"
+                src="images/windowContent_53.png"
                 alt=""
                 data-caption="Охота на дикого оленя и птицу, а также рыболовство обеспечивали коренное население пищевыми ресурсами; вьючно-верховое и нартенное оленеводство позволяло кочевникам быть мобильными"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_10"
-                src="images/windowContent_11.png"
+                src="images/windowContent_54.png"
                 alt=""
                 data-caption="Зимовавшие в окрестностях станков Хатангского тракта долганы совместно с эвенками, якутами и затундринскими крестьянами, начинали совместные перекочевки, снимаясь с зимних стоянок в середине – конце апреля"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_11"
-                src="images/windowContent_12.png"
+                src="images/windowContent_55.png"
                 alt=""
                 data-caption="В отдельных хозяйствах первым кочевать (аргишить) отправлялся глава семьи, а некоторое время спустя за ним следовали его домочадцы. Кочевали вглубь тундры не спеша, проверяя ловушки на песца по пути на летние стоянки"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_12"
-                src="images/windowContent_13.png"
+                src="images/windowContent_56.png"
                 alt=""
                 data-caption="Летние стоянки охотников-оленеводов располагались в 300–400 км от зимних. Перекочевки совершали семьями, со всем имуществом и оленьим стадом. Добравшись до летних стоянок, хозяйства объединяли своих оленей в одно стадо"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_13"
-                src="images/windowContent_14.png"
+                src="images/windowContent_57.png"
                 alt=""
                 data-caption="Во время пребывания на зимних стоянках долганские охотники-оленеводы, в противоположность ненцам, были малоподвижны. Оленьи стада пастухи перегоняли с одного пастбища на другое по мере необходимости"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_14"
-                src="images/windowContent_15.png"
+                src="images/windowContent_58.png"
                 alt=""
                 data-caption="Индивидуальные способы охоты долган на дикого оленя (с оленем-манщиком, с домашним оленем, на рогах которого крепилась петля, охота со щитком, охота гоном на нартенной упряжке, охота самострелами и др.) были частыми"
               />
             </div>
           </div>
+          <div class="screenButton_about">-</div>
           <button class="exit_2">х</button>
         </div>
         <div class="windowScreen_3">
@@ -500,10 +519,13 @@
               </div>
               <div id="describeInfo">
                 <p id="downT">
-                  Мифы и легенды долган имеют особую природу повествования. От
-                  основания земли в виде огромной важенки (самки оленя) до духов
-                  земли Моу-нямы и воды <br />
-                  и Верхнего мира Коу-нямы
+                  Потому что это история. Такие народы, как долганы, должны
+                  освещаться и не забываться, ведь при всей малочисленности
+                  этого северного рода, в нём спрятано множество духовных
+                  нестандартных ценностей, интересных для освещения. Особенно
+                  важный упор я сделала на изучении фольклора и мифов долган,
+                  ведь их мировоззрение крайне разнится <br />
+                  с типичным представлением истории здесь и сейчас.
                 </p>
               </div>
             </div>
@@ -519,54 +541,55 @@
               <img
                 id="imgInfo"
                 class="imgInfo_1"
-                src="images/windowContent_16.png"
+                src="images/windowContent_59.png"
                 alt=""
                 data-caption="На земле наступила ночь. Люди пришли в замешательство. Они не знали, что делать. В то время среди народа жил знаменитый охотник и силач Мани. Он не растерялся, взял лук, позвал двух охотничьих собак и побежал вдогонку за лосями"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_2"
-                src="images/windowContent_17.png"
+                src="images/windowContent_60.png"
                 alt=""
                 data-caption="Самый первый олень, у которого один рог был из камня, а второй — из мамонтовой кости, бросил вверх свой каменный рог — из него возникли тучи, пошёл снег; когда же олень бросил кверху свой мамонтовый рог, то ударил мороз, а небо стало ясным"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_3"
-                src="images/windowContent_18.png"
+                src="images/windowContent_61.png"
                 data-caption="В далеком прошлом, в мире царил хаос. Основные стихии – небо и вода не были отделены друг от друга, земли не было, но вот гагара нырнула в воду и вытащила в клюве несколько песчинок земли. Из этих песчинок она сотворила землю"
                 alt=""
               />
               <img
                 id="imgInfo"
                 class="imgInfo_4"
-                src="images/windowContent_19.png"
+                src="images/windowContent_62.png"
                 alt=""
                 data-caption="У долган традиционным верованием был шаманизм. Долганы верили, что шаман оберегает их от злых духов и козней плохих людей. Шаманом мог стать человек, у которого в роду были предки, занимавшиеся шаманизмом"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_5"
-                src="images/windowContent_20.png"
+                src="images/windowContent_63.png"
                 alt=""
                 data-caption="Особое значение в культовой жизни долган имели охотничьи, промысловые обряды и обычаи, так как от добычи и улова зависела жизнь и благосостояние семьи. В основном обряды относились к ритуальному снятию шкуры и разделке мяса"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_6"
-                src="images/windowContent_21.png"
+                src="images/windowContent_64.png"
                 alt=""
                 data-caption="Вселенная у долган представляла собой три мира: верхний – небесный, средний – земной и нижний – подземный. Верхний мир населяли божества и добрые духи айыы. В среднем мире обитали люди и дух земли – Ааан дойду иччитэ"
               />
               <img
                 id="imgInfo"
                 class="imgInfo_7"
-                src="images/windowContent_22.png"
+                src="images/windowContent_65.png"
                 alt=""
                 data-caption="Долганы почитали различные обряды и праздники. Одним из главных праздников, который проводили раз в год был праздник Большого дня, который символизировал собой встречу солнца. На севере Якутии его проводят до сих пор"
               />
             </div>
           </div>
+          <div class="screenButton_about">-</div>
           <button class="exit_3">х</button>
         </div>
         <!-- <div class="windowScreen_4">

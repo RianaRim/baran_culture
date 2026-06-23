@@ -56,3 +56,48 @@
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
+@keyframes rotate3d-spin {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+@keyframes mask {
+  0% {
+    background-position-x: 0px;
+  }
+  11% {
+    background-position-x: -43vw;
+  }
+  22% {
+    background-position-x: -90vw;
+  }
+  33% {
+    background-position-x: -143vw;
+  }
+  44% {
+    background-position-x: -190vw;
+  }
+  55% {
+    background-position-x: -237vw;
+  }
+  66% {
+    background-position-x: -274vw;
+  }
+}
+@keyframes stamps {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 1, 0, 25deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -25deg);
+  }
+  75% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}

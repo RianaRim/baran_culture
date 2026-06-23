@@ -1,0 +1,269 @@
+@media screen and (max-width: 600px) {
+  /* экран "об авторе" */
+  body {
+    height: 216.5vw;
+  }
+  .blueBorder_3 {
+    height: 3.3vw;
+    top: 220.8vw;
+  }
+  .about {
+    font-family: 'Stezhok';
+    font-size: 11vw;
+    color: #fdfdfd;
+    position: absolute;
+    top: 1.6vw;
+    left: 64.7vw;
+    z-index: 2;
+  }
+  .projectScreen {
+    width: 100%;
+    height: 212.5vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .buttonScreen {
+    width: 100%;
+    height: 42vw;
+  }
+  .stroke_5 {
+    width: 95vw;
+    height: 33vw;
+    outline-width: 0.35vw;
+    margin: 7vw 0.5vw 0.5vw 2.5vw;
+  }
+  .stroke_6 {
+    width: 93vw;
+    height: 27vw;
+    outline-width: 0.35vw;
+    margin: 0 auto;
+    top: 15vw;
+    left: 3.5vw;
+  }
+  .fullScreenButton,
+  .thinScreenButton {
+    display: none;
+  }
+  .rec_7,
+  .rec_8,
+  .rec_9 {
+    height: 8.9vw;
+  }
+  #windowName_7,
+  #windowName_8,
+  #windowName_9 {
+    font-size: 3vw;
+    padding-top: 3.3vw;
+  }
+  .pageIcon2 {
+    width: 6.4vw;
+    top: 17vw;
+    left: 89vw;
+    animation-duration: 0.8s;
+    animation-play-state: running;
+  }
+  .pageIcon3 {
+    width: 6.4vw;
+    top: 26.3vw;
+    left: 89vw;
+    animation-duration: 0.8s;
+    animation-play-state: running;
+  }
+  .pageIcon4 {
+    width: 6.4vw;
+    top: 35.6vw;
+    left: 89vw;
+    animation-duration: 0.8s;
+    animation-play-state: running;
+  }
+  .pageIcon5,
+  .pageIcon6,
+  .pageIcon7,
+  .pageIcon8,
+  .pageIcon9,
+  .pageIcon10,
+  .pageIcon11,
+  .pageIcon12,
+  .pageIcon13,
+  .pageIcon14,
+  .pageIcon15,
+  .pageIcon16,
+  .pageIcon17,
+  .pageIcon18,
+  .pageIcon19,
+  .pageIcon20,
+  .pageIcon21,
+  .pageIcon22 {
+    display: none;
+  }
+  .contentScreen {
+    width: 100%;
+    height: 70.5vw;
+  }
+  .masks {
+    width: 40vw;
+    height: 60vw;
+    background-image: url('../images/masks.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 65vw 0vw 10vw 12vw;
+    animation: mask 5s infinite steps(1);
+  }
+  .masks2 {
+    width: 40vw;
+    height: 60vw;
+    background-image: url('../images/masks.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 65vw 10vw 10vw 0vw;
+    animation: mask 5s infinite 0.5s steps(1);
+  }
+  .hoverScreen_1,
+  .hoverScreen_2,
+  .hoverScreen_3,
+  .hoverScreen_4,
+  .hoverScreen_5,
+  .hoverScreen_6 {
+    z-index: 10;
+  }
+  .windowScreen_1,
+  .windowScreen_2,
+  .windowScreen_3 {
+    width: 100%;
+    height: 175.4vw;
+    top: 45.5vw;
+    left: 0;
+  }
+  .stroke_7 {
+    width: 95vw;
+    height: 172vw;
+    outline-width: 0.35vw;
+    margin: 1vw 0.5vw 0.5vw 2.5vw;
+  }
+  .stroke_8 {
+    width: 92.5vw;
+    height: 166vw;
+    outline-width: 0.35vw;
+    margin: 4.5vw 0.5vw 0.5vw 3.4vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .text_1 {
+    width: 99%;
+    margin: 0 auto;
+    justify-content: start;
+  }
+  #mainInfo {
+    height: 45%;
+    margin-top: 0;
+  }
+  #info {
+    height: 18%;
+  }
+  #leftT,
+  #rightT {
+    font-size: 3vw;
+  }
+  #describeInfo {
+    width: 100%;
+    align-items: end;
+    margin-top: 0;
+  }
+  #downT {
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+  .images_1 {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: -25vw;
+  }
+  .exit_1,
+  .exit_2,
+  .exit_3,
+  .exit_4,
+  .exit_5,
+  .exit_6 {
+    display: block;
+    width: 4vw;
+    height: 4vw;
+    font-family: 'Architexture';
+    font-size: 4vw;
+    left: 92.5vw;
+  }
+  .screenButton_about {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: -1.7vw;
+    left: 86vw;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stezhok';
+    font-size: 37.1vw;
+    color: #fdfdfd;
+    cursor: pointer;
+  }
+  #imgInfo {
+    width: 100%;
+    height: 100%;
+  }
+  .modalContent {
+    max-width: 96%;
+    padding-top: 0;
+    padding-left: 3vw;
+  }
+  .modalText {
+    width: 100%;
+    top: 145vw;
+    left: 2.5vw;
+  }
+  .modalText p {
+    font-size: 3vw;
+    line-height: 3.4vw;
+  }
+
+  .screenButton_project {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: -1.7vw;
+    left: 85vw;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stezhok';
+    font-size: 37.1vw;
+    color: #fdfdfd;
+    cursor: pointer;
+  }
+  .windowScreen_collapsed {
+    height: 6vw;
+    overflow: hidden;
+    top: 45.5vw;
+    left: 0;
+    background-color: #0504ff;
+  }
+  .windowScreen_collapsed .text_1,
+  .windowScreen_collapsed .images_1,
+  .windowScreen_collapsed .modalImgWindow_1,
+  .windowScreen_collapsed .stroke_7,
+  .windowScreen_collapsed .stroke_8 {
+    display: none;
+  }
+  .windowScreen_collapsed #windowName_7,
+  .windowScreen_collapsed #windowName_8,
+  .windowScreen_collapsed #windowName_9 {
+    display: block;
+    font-size: 2.5vw;
+    padding: 1vw;
+    text-align: center;
+  }
+}
