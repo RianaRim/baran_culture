@@ -2,7 +2,6 @@
   body {
     height: 216.5vw;
     overflow-x: hidden;
-    overflow-y: scroll;
   }
   /* ______________бургер-меню______________ */
   #burger {
@@ -186,7 +185,7 @@
     height: 216.5vw;
   }
   .blueBorder_3 {
-    height: 3.3vw;
+    height: 100vw;
     top: 220.8vw;
   }
   .project {

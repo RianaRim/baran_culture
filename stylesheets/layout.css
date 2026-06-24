@@ -49,7 +49,7 @@ p {
 }
 .blueBorder_2 {
   width: 0.5vw;
-  height: 48vw;
+  height: 100vw;
   background-color: #0504ff;
   position: absolute;
   top: 2.5vw;
@@ -57,7 +57,7 @@ p {
 }
 .blueBorder_3 {
   width: 99.5vw;
-  height: 0.5vw;
+  height: 55vw;
   background-color: #0504ff;
   position: absolute;
   top: 47.5vw;
