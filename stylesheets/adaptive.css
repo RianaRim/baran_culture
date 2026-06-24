@@ -63,8 +63,9 @@
     margin-left: 1vw;
   }
   #time {
-    margin-top: 70vw;
+    margin-top: 60vw;
     margin-left: 1vw;
+    z-index: 5;
   }
   #timeName {
     margin-top: -5vw;
