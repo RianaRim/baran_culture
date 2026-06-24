@@ -284,6 +284,11 @@
     padding-top: 70vw;
     padding-left: 3vw;
   }
+  .modalContent_5 {
+    max-width: 96%;
+    padding-top: 0vw;
+    padding-left: 3vw;
+  }
   .modalText {
     width: 100%;
     top: 145vw;
