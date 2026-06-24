@@ -2,6 +2,8 @@
   /* экран "об авторе" */
   body {
     height: 216.5vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   .blueBorder_3 {
     height: 3.3vw;
@@ -167,7 +169,7 @@
   }
   #describeInfo {
     width: 100%;
-    align-items: end;
+    align-items: center;
     margin-top: 0;
   }
   #downT {

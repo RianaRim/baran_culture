@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404: страница не найдена</title>
+    <link rel="stylesheet" href="stylesheets/style404.css" />
+    <link rel="stylesheet" href="stylesheets/404.css" />
+    <link rel="stylesheet" href="stylesheets/adaptive404.css" />
+    <link rel="icon" href="images/logotype.svg" type="images.svg" />
+    <script defer src="javascripts/404.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
+          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
+        }
+      }
+    </script>
+    <script defer src="javascripts/model.js" type="module"></script>
+  </head>
+  <body>
+    <!-- _________________шапка_________________ -->
+    <section class="heeader">
+      <div class="blueRec">
+        <img
+          id="fullLogo"
+          src="images/logotype_full.svg"
+          alt="логотип агенства"
+        />
+      </div>
+      <div class="blueBorder_1"></div>
+      <div class="blueBorder_2"></div>
+      <div class="blueBorder_3"></div>
+    </section>
+    <section class="mainScreen">
+      <div class="paleolit"></div>
+      <div class="paleolitMobile"></div>
+      <div class="imageElement"></div>
+
+      <div class="content">
+        <p class="error">Ой</p>
+        <p class="description">
+          Видимо, вам недоступна данная информация. Просим вернуться <br />
+          на главную страницу. Приносим свои извинения!
+        </p>
+      </div>
+      <div class="buttons">
+        <a href="index.html"><button class="main">Главная</button></a>
+        <a href="archive.html"><button class="archive">Архив</button></a>
+        <div class="decor_1"></div>
+        <div class="decor_2"></div>
+      </div>
+    </section>
+  </body>
+</html>

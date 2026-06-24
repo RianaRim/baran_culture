@@ -1,0 +1,74 @@
+@media screen and (max-width: 600px) {
+  body {
+    height: 216.5vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  /* _______________главный экран_______________ */
+  .blueRec {
+    height: 11vw;
+  }
+  #fullLogo {
+    margin-top: 2vw;
+  }
+  .mainScreen {
+    height: 212vw;
+    overflow: hidden;
+  }
+  .imageElement {
+    width: 25vw;
+  }
+  .blueBorder_1,
+  .blueBorder_2 {
+    width: 1vw;
+    height: 221vw;
+  }
+  .blueBorder_2 {
+    left: 99.07vw;
+  }
+  .blueBorder_3 {
+    width: 100%;
+    height: 3vw;
+    top: 221.1vw;
+    left: 0;
+  }
+  .content {
+    height: 85%;
+    margin-bottom: -125vw;
+  }
+  .error {
+    font-size: 75vw;
+    margin-bottom: -13vw;
+  }
+  .description {
+    font-size: 2.5vw;
+  }
+  a {
+    height: 15vw;
+  }
+  .main {
+    width: 35vw;
+    height: 15vw;
+    font-size: 4.5vw;
+  }
+  .archive {
+    width: 35vw;
+    height: 15vw;
+    font-size: 4.5vw;
+  }
+  .decor_1,
+  .decor_2 {
+    width: 32.4vw;
+    height: 8.5vw;
+    background-size: cover;
+  }
+  .decor_1 {
+    top: 154vw;
+    left: 15.5vw;
+  }
+  .decor_2 {
+    top: 154vw;
+    left: 52.8vw;
+  }
+}

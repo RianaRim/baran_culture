@@ -1,4 +1,9 @@
 @media screen and (max-width: 600px) {
+  body {
+    height: 216.5vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
   /* ______________бургер-меню______________ */
   #burger {
     width: 40px;
@@ -58,6 +63,11 @@
     margin-left: 1vw;
   }
   #time {
+    margin-top: 105vw;
+    margin-left: 1vw;
+  }
+  #timeName {
+    margin-top: -5vw;
     margin-left: 1vw;
   }
   #name {
@@ -161,7 +171,7 @@
   .iconAnimateMobile {
     width: 42vw;
     height: 36vw;
-    background-image: url(../images/iconAnimateMobile.svg);
+    background-image: url('../images/iconAnimateMobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

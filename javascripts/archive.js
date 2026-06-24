@@ -21,6 +21,131 @@ fullScreenButton()
 // сворачивание окон
 collapseWindowMobile()
 
+// ___________выпадающее окно с изображением и надписью___________
+modalWindowImg3()
+modalWindowImg4()
+modalWindowImg6()
+
+// надписи под изображениями
+thumbnail3()
+thumbnail4()
+thumbnail6()
+
+// надписи под изображениями
+function thumbnail6() {
+  let modal = document.querySelector('.modalImgWindow_6')
+  let thumbnails = document.querySelectorAll('.thumbnail_6')
+  let modalImg = document.getElementById('modalImageSrc6')
+  let captionP = document.getElementById('currentCaption6')
+
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener('click', (e) => {
+      // e.preventDefault()
+      // if (!modal || !modalImg || !captionP) return
+
+      modal.style.display = 'block'
+
+      modalImg.src = thumbnail.src
+
+      let captionText = thumbnail.getAttribute('data-caption')
+      captionP.textContent = captionText || ''
+
+      let captionContainer = captionP.parentElement
+      if (captionContainer) {
+        captionContainer.style.display = captionText ? 'block' : 'none'
+      }
+    })
+  })
+
+  console.log(thumbnail6)
+}
+function thumbnail4() {
+  let modal = document.querySelector('.modalImgWindow_4')
+  let thumbnails = document.querySelectorAll('.thumbnail_4')
+  let modalImg = document.getElementById('modalImageSrc4')
+  let captionP = document.getElementById('currentCaption4')
+
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener('click', (e) => {
+      // e.preventDefault()
+      // if (!modal || !modalImg || !captionP) return
+
+      modal.style.display = 'block'
+
+      modalImg.src = thumbnail.src
+
+      let captionText = thumbnail.getAttribute('data-caption')
+      captionP.textContent = captionText || ''
+
+      let captionContainer = captionP.parentElement
+      if (captionContainer) {
+        captionContainer.style.display = captionText ? 'block' : 'none'
+      }
+    })
+  })
+
+  console.log(thumbnail4)
+}
+function thumbnail3() {
+  let modal = document.querySelector('.modalImgWindow_3')
+  let thumbnails = document.querySelectorAll('.thumbnail_3')
+  let modalImg = document.getElementById('modalImageSrc3')
+  let captionP = document.getElementById('currentCaption3')
+
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener('click', (e) => {
+      // e.preventDefault()
+      // if (!modal || !modalImg || !captionP) return
+
+      modal.style.display = 'block'
+
+      modalImg.src = thumbnail.src
+
+      let captionText = thumbnail.getAttribute('data-caption')
+      captionP.textContent = captionText || ''
+
+      let captionContainer = captionP.parentElement
+      if (captionContainer) {
+        captionContainer.style.display = captionText ? 'block' : 'none'
+      }
+    })
+  })
+
+  console.log(thumbnail3)
+}
+
+// ___________выпадающее окно с изображением и надписью___________
+function modalWindowImg6() {
+  document.addEventListener('DOMContentLoaded', modalWindowImg6)
+  let modal = document.querySelector('.modalImgWindow_6')
+
+  modal.addEventListener('click', (e) => {
+    modal.style.display = 'none'
+  })
+
+  console.log(modalWindowImg6)
+}
+function modalWindowImg4() {
+  document.addEventListener('DOMContentLoaded', modalWindowImg4)
+  let modal = document.querySelector('.modalImgWindow_4')
+
+  modal.addEventListener('click', (e) => {
+    modal.style.display = 'none'
+  })
+
+  console.log(modalWindowImg4)
+}
+function modalWindowImg3() {
+  document.addEventListener('DOMContentLoaded', modalWindowImg3)
+  let modal = document.querySelector('.modalImgWindow_3')
+
+  modal.addEventListener('click', (e) => {
+    modal.style.display = 'none'
+  })
+
+  console.log(modalWindowImg3)
+}
+
 // сворачивание окон
 function collapseWindowMobile() {
   document.addEventListener('DOMContentLoaded', () => {

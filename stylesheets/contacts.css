@@ -533,8 +533,132 @@ hr {
   margin: 0 auto;
   padding: 0.5vw 0.5vw;
   opacity: 0;
-  transform-style: preserve-3d;
-  animation: rotate3d-spin 1.5s linear infinite;
+}
+
+/* _______________форма для записи_______________ */
+form {
+  width: 30%;
+  height: 22vw;
+  background-color: #0504ff;
+  padding: 2vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 13vw;
+  left: 54vw;
+}
+
+.placeholder input,
+select {
+  width: 100%;
+  height: 2.5vw;
+  background-color: #6767fc;
+  border-color: transparent;
+  color: #fdfdfd;
+}
+.placeholder input,
+.placeholder {
+  position: relative;
+  z-index: 1;
+  background-color: #6767fc;
+  border-color: transparent;
+  width: 100%;
+}
+.placeholder::before {
+  position: absolute;
+  top: 0.7vw;
+  left: 0.5vw;
+  content: 'Placeholder';
+  font-family: 'Architexture';
+  font-size: 1.2vw;
+  color: #fdfdfd;
+  transition: all ease 0.3s;
+  z-index: 10;
+}
+.placeholder:has(input[name='userName'])::before {
+  content: 'Имя пользователя';
+}
+.placeholder:has(input[name='email'])::before {
+  content: 'Электронная почта';
+}
+.placeholder:has(input[name='phone'])::before {
+  content: 'Номер телефона';
+}
+input:focus,
+select:focus {
+  outline-color: #6767fc;
+}
+.placeholder:has(input:focus)::before,
+.placeholder:has(:not(:placeholder-shown))::before {
+  font-size: 1vw;
+  opacity: 0;
+  top: 0.5vw;
+}
+
+form button {
+  width: 50%;
+  height: 3.2vw;
+  border: 0.1vw solid #fdfdfd;
+  background-color: transparent;
+  color: #fdfdfd;
+  font-family: 'Architexture';
+  font-size: 1.6vw;
+  transition: all ease 0.3s;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #6767fc;
+  color: #fdfdfd;
+}
+
+.formButton {
+  width: 10vw;
+  height: 2vw;
+  position: absolute;
+  top: 44.2vw;
+  left: 41vw;
+  z-index: 10;
+  background-color: #0504ff;
+  border-color: transparent;
+  color: #fdfdfd;
+  font-family: 'Architexture';
+  font-size: 1vw;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.formButton:hover {
+  background-color: #6767fc;
+}
+.exit_form {
+  width: 1vw;
+  height: 1vw;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 13.4vw;
+  left: 82.6vw;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stezhok';
+  font-size: 1.6vw;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+.form {
+  opacity: 0;
+  pointer-events: none;
+}
+.form.is-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* ______________окна с информацией______________ */

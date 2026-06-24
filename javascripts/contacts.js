@@ -13,13 +13,86 @@ hoverImage5()
 hoverImage6()
 
 // сворачивание окон
-collapseWindowMobile()
+// collapseWindowMobile()
 
 // ____________открытие/закрытие окна____________
 windowButton()
 
 // ______________окно на весь экран______________
 fullScreenButton()
+
+// _______________форма для записи_______________
+formatPhoneInput()
+formModalWindow()
+
+// __________кнопка появления формы записи__________
+formButton()
+
+// __________кнопка появления формы записи__________
+function formButton() {
+  let form = document.querySelector('form')
+  let button = document.querySelector('.formButton')
+  let exit = document.querySelector('.exit_form')
+
+  button.addEventListener('click', () => {
+    form.classList.add('is-visible')
+    exit.style.display = 'flex'
+  })
+
+  exit.addEventListener('click', () => {
+    form.classList.remove('is-visible')
+    exit.style.display = 'none'
+  })
+}
+
+// _______________форма для записи_______________
+function formatPhoneInput() {
+  let phoneInput = document.querySelector('input[name="phone"]')
+
+  phoneInput.addEventListener('keypress', (event) => {
+    if (!/[0-9]/.test(event.key)) {
+      event.preventDefault()
+    }
+  })
+
+  phoneInput.addEventListener('input', function () {
+    let numbers = this.value.replace(/\D/g, '')
+    numbers = numbers.substring(0, 10)
+
+    let formatted = ''
+
+    if (numbers.length > 0) {
+      formatted += '(' + numbers.substring(0, 3)
+    }
+    if (numbers.length >= 4) {
+      formatted += ') ' + numbers.substring(3, 6)
+    }
+    if (numbers.length >= 7) {
+      formatted += '-' + numbers.substring(6, 8)
+    }
+    if (numbers.length >= 9) {
+      formatted += '-' + numbers.substring(8, 10)
+    }
+
+    this.value = formatted
+  })
+}
+
+function formModalWindow() {
+  let form = document.querySelector('form')
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    let userName = form.userName.value
+
+    if (userName == '') {
+      alert(`Спасибо, аноним! Данные сохранены.`)
+    } else {
+      alert(`Спасибо, ${userName}! Данные сохранены.`)
+    }
+  })
+}
 
 // ______________окно на весь экран______________
 function fullScreenButton() {
@@ -69,7 +142,7 @@ function windowButton() {
 // сворачивание окон
 function collapseWindowMobile() {
   document.addEventListener('DOMContentLoaded', () => {
-    let buttons = document.querySelectorAll('.screenButton_about')
+    let buttons = document.querySelectorAll('.screenButton_contacts')
 
     buttons.forEach((btn) => {
       btn.addEventListener('click', () => {
