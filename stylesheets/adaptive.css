@@ -2,7 +2,7 @@
   body {
     height: 216.5vw;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   /* ______________бургер-меню______________ */
   #burger {
@@ -105,7 +105,7 @@
   }
   .mainScreen {
     height: 221vw;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   .content {
     width: 100%;
@@ -122,10 +122,7 @@
   }
   .paleolitMobile {
     width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 212vw;
     z-index: -1;
     overflow: visible;
     display: block;
@@ -186,7 +183,7 @@
     height: 216.5vw;
   }
   .blueBorder_3 {
-    height: 100vw;
+    height: 4vw;
     top: 220.8vw;
   }
   .project {
